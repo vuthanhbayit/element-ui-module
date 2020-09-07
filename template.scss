@@ -1,0 +1,14 @@
+<% if(options.customVariable) { %>
+@import "<%= options.customVariable %>";
+<% } %>
+<% if(options.components.length === 0) { %>
+@import "~element-ui/packages/theme-chalk/src/index.scss";
+<% } else { %>
+<% options.components.forEach((c) => { %>
+@import "~element-ui/packages/theme-chalk/src/<%= c.fileName %>.scss";
+<% }) %>
+
+@import "~element-ui/packages/theme-chalk/src/icon.scss";
+@import "~element-ui/packages/theme-chalk/src/common/popup.scss";
+@import "~element-ui/packages/theme-chalk/src/common/transition.scss";
+<% } %>
