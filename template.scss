@@ -1,3 +1,6 @@
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
 <% if(options.customVariable) { %>
 @import "<%= options.customVariable %>";
 <% } %>

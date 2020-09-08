@@ -86,6 +86,9 @@ elementUI: {
 
 - Build: element-ui.scss
 ```scss
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
 @import '~/assets/scss/element-ui.scss';
 @import '~element-ui/packages/theme-chalk/src/index.scss';
 ```
